@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap');
+
+body {
+    background-image: url(/qr-code-generator/resources/qa-bg.jpg);
+    background-size: 1920px 1400px;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: outfit;
+}
+
+.logo {
+    height: 5vh;
+    margin: 16px;
+}
+
+.logo-small {
+    height: 3vh;
+}
+
+.text-box {
+    background-color: #030616;
+    padding: 8px;
+    border: 2px solid #263FA9;
+    border-radius: 16px;
+    margin: 16px;
+}
+
+input {
+    font-family: outfit;
+    font-size: 16px;
+    border: 0px;
+    color: #FAFAF9;
+    background-color: #030616;
+    padding: 16px;
+    width: 30vw;
+}
+
+input::placeholder {
+    color: #FAFAF9;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #030616 inset;
+    -webkit-text-fill-color: #FAFAF9;
+}
+
+#qr-button {
+    font-family: outfit;
+    font-size: 16px;;
+    color: #FAFAF9;
+    background-color: #263FA9;
+    border: 0px;
+    border-radius: 8px;
+    padding: 16px 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#qr-button:hover {
+    opacity: 0.8;
+}
+
+.buttons {
+    display: none;
+    gap: 32px;
+    margin-top: 20px;
+}
+
+.buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: outfit;
+    font-size: 16px;
+    color: #FAFAF9;
+    background-color: #263FA9;
+    border: 0px;
+    border-radius: 8px;
+    padding: 16px 36px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttons button:hover {
+    opacity: 0.8;
+}
+
+#qr-url {
+    font-family: outfit;
+    font-size: 20px;
+    color: #FAFAF9;
+}
+
+#qr-code {
+    display: none;
+    padding: 20px;
+    background-color: #030616;
+    border: 2px solid #263FA9;
+    border-radius: 20px;
+}

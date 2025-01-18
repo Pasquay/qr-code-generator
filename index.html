@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>QR Code Generator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <img class="logo" src="/qr-code-generator/resources/Logo.svg" alt="">
+        <div class="text-box">
+            <input type="text" id="url-input" placeholder="Enter URL">
+            <button id="qr-button" onclick="">QR code</button>
+        </div>
+        <p id="qr-url"></p>
+        <div id="qr-code"></div>
+
+        <div class="buttons" id="buttons">
+            <button id="qr-download">Download<img src="/qr-code-generator/resources/Load_circle_duotone.svg" alt=""></button>
+            <button id="qr-share">Share<img src="/qr-code-generator/resources/link_alt.svg" alt=""></button>
+        </div>
+
+
+        <script src="/qr-code-generator/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    </body>
+</html>
